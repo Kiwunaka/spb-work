@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Работа в Санкт-Петербурге</title>
+<meta name="description" content="Работа в Санкт-Петербурге: высокий доход, ежедневные выплаты, честные условия без скрытых штрафов. Более 5 лет на рынке. 18+">
+<meta name="theme-color" content="#0d0610">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>:root { --bg: #0d0610; --paper: #1d0c17; --ink: #fff1f7; --soft-ink: rgba(255,241,247,.76); --soft: rgba(255,241,247,.52); --rose: #ff3d9a; --on-rose: #0d0610; --yellow: #ffd400; --line: rgba(255,140,195,.2); --line-strong: rgba(255,140,195,.42); --arch: radial-gradient(90% 70% at 50% 70%, #3a0d2c 0%, #150811 80%); }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+html, body { overflow-x: clip; }
+body { min-height: 100svh; background: var(--bg); color: var(--ink); font: 400 16px/1.6 'Montserrat', Arial, sans-serif; }
+a { color: inherit; }
+.page { width: min(1080px, 100% - 32px); margin-inline: auto; padding: max(28px, env(safe-area-inset-top)) 0 calc(36px + env(safe-area-inset-bottom)); }
+
+.main { display: grid; gap: 34px; padding-bottom: 44px; }
+h1 { font: 800 clamp(28px, 8vw, 54px)/1.1 'Montserrat', sans-serif; letter-spacing: -.02em; }
+h1 em { font-style: normal; color: var(--rose); white-space: nowrap; }
+.sub { margin-top: 14px; font: 700 20px/1.3 'Montserrat', sans-serif; color: var(--rose); }
+.lead { margin-top: 18px; font-size: 18px; font-weight: 600; line-height: 1.45; }
+.text { margin-top: 12px; max-width: 46ch; color: var(--soft-ink); }
+.text b { color: var(--ink); font-weight: 700; }
+.about { position: relative; margin-top: 20px; padding: 18px 20px 18px 22px; border-radius: 16px; background: var(--paper); border: 1px solid var(--line-strong); overflow: hidden; }
+.about::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--rose); }
+.about .lead { margin-top: 0; }
+.about .text { max-width: none; }
+.btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 26px; }
+.btn { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 58px; padding: 0 18px; border-radius: 14px; color: #fff;
+  font: 700 17px/1 'Montserrat', sans-serif; white-space: nowrap; text-decoration: none; box-shadow: 0 8px 20px -10px rgba(0,0,0,.5); transition: transform .2s, filter .2s; }
+.btn:hover { filter: brightness(1.08); }
+.btn:active { transform: scale(.97); }
+.btn svg { width: 22px; height: 22px; flex: none; }
+.tg { background: #1f8fd0; }
+.wa { background: #16a34a; }
+.age-note { display: flex; align-items: center; gap: 10px; margin-top: 16px; font-size: 13px; color: var(--soft); }
+.age-note b { font-size: 12px; color: var(--ink); border: 1.5px solid var(--ink); border-radius: 8px; padding: 3px 7px; }
+
+.video-card { position: relative; width: min(100%, 380px); aspect-ratio: 9 / 16; margin-inline: auto; border-radius: 999px 999px 24px 24px; overflow: hidden; background: var(--arch); }
+.video-card video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; visibility: hidden; }
+.video-card.playing video { visibility: visible; }
+.video-card .poster { position: absolute; inset: 0; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 22px; }
+.video-card .poster img { height: 80%; width: auto; }
+.video-card .play { position: absolute; left: 50%; top: 38%; translate: -50% -50%; width: 76px; height: 76px; border-radius: 50%; border: 0; cursor: pointer;
+  background: var(--paper); color: var(--ink); display: grid; place-items: center; box-shadow: 0 12px 30px -10px rgba(0,0,0,.45); transition: transform .2s; }
+.video-card .play:hover { transform: scale(1.06); }
+.video-card .play svg { width: 26px; height: 26px; margin-left: 4px; }
+.video-card .cap { position: absolute; left: 18px; right: 18px; bottom: 16px; padding: 12px 16px; border-radius: 16px; background: var(--paper); }
+.video-card .cap b { display: block; font-size: 16px; font-weight: 700; }
+.video-card .cap span { font-size: 13px; color: var(--soft); }
+.video-card.playing .play, .video-card.playing .poster, .video-card.playing .cap { display: none; }
+.video-card.soon .play { display: none; }
+
+h2 { font: 800 clamp(26px, 4vw, 38px)/1.15 'Montserrat', sans-serif; letter-spacing: -.01em; }
+.key { padding: 44px 0; border-top: 1px solid var(--line); }
+.points { list-style: none; display: grid; gap: 10px; margin-top: 24px; }
+.points li { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; padding: 16px 18px; border: 1.5px solid var(--line-strong); border-radius: 16px; transition: border-color .25s; }
+.points li:hover { border-color: var(--rose); }
+.points .n { grid-row: span 2; font: 800 22px/1.1 'Montserrat', sans-serif; color: var(--rose); min-width: 1.6em; }
+.points b { font-weight: 700; }
+.points p { font-size: 14px; line-height: 1.5; color: var(--soft-ink); }
+.partners { display: flex; gap: 10px; margin-top: 16px; padding: 14px 18px; border: 1.5px dashed var(--line-strong); border-radius: 14px; font-size: 14px; color: var(--soft-ink); }
+.partners::before { content: '*'; font: 800 20px/1 'Montserrat', sans-serif; color: var(--rose); }
+.summary { margin-top: 16px; padding: 24px; border-radius: 18px; background: var(--paper); border: 2px solid var(--rose); font-size: 18px; font-weight: 600; line-height: 1.45; }
+
+.contacts { padding-top: 44px; border-top: 1px solid var(--line); display: grid; gap: 18px; }
+.contacts ul { list-style: none; display: grid; gap: 10px; }
+.contacts li a { display: flex; align-items: center; gap: 14px; padding: 14px 18px 14px 14px; border: 1.5px solid var(--line-strong); border-radius: 14px; text-decoration: none; transition: border-color .25s; }
+.contacts li i { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: #fff; flex: none; }
+.contacts li i svg { width: 22px; height: 22px; }
+.contacts li span { flex: 1; color: var(--soft); font-size: 14px; }
+.contacts li b { font-size: 17px; font-weight: 700; }
+.contacts li a:hover { border-color: var(--rose); }
+
+.dock { position: fixed; z-index: 50; left: 0; right: 0; bottom: 0; padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  background: var(--bg); border-top: 1px solid var(--line); transform: translateY(110%); transition: transform .3s; }
+.dock.show { transform: none; }
+.dock .btns { margin: 0; }
+.page { padding-bottom: calc(100px + env(safe-area-inset-bottom)); }
+
+.switch { position: fixed; z-index: 60; right: 12px; top: 64px; display: flex; flex-direction: column; gap: 2px; padding: 4px; border-radius: 16px;
+  background: rgba(20, 10, 16, .85); backdrop-filter: blur(10px); font: 700 11px/1 'Montserrat', sans-serif; }
+.switch a { padding: 8px 10px; border-radius: 12px; color: #fff; text-decoration: none; opacity: .65; white-space: nowrap; }
+.switch a.on { background: #c24d78; opacity: 1; }
+@media (min-width: 900px) {
+  .page { width: min(1080px, 100% - 96px); padding-top: 56px; }
+  .main { grid-template-columns: 1.2fr 1fr; align-items: center; gap: 70px; padding-bottom: 56px; }
+  .btns { grid-template-columns: auto auto; justify-content: start; }
+  .btn { padding: 0 30px; }
+  .dock { display: none; }
+  .page { padding-bottom: 56px; }
+  .points { grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .points li { grid-template-columns: 1fr; align-content: start; padding: 20px; }
+  .points .n { grid-row: auto; margin-bottom: 8px; }
+  .summary { padding: 28px 32px; }
+  .contacts { grid-template-columns: 1fr 2fr; align-items: center; }
+  .contacts ul { grid-template-columns: 1fr 1fr; }
+}
+
+body { background: radial-gradient(90% 60% at 80% 0%, #2b0a24 0%, var(--bg) 60%) fixed, var(--bg); }
+.work { display: block; width: min(100%, 440px); height: auto; margin: 10px 0 22px; }
+h1, h2 { font-family: 'Oswald', 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .01em; }
+h1 { font-size: clamp(30px, 7vw, 50px); line-height: 1.05; }
+h1 em { color: var(--rose); }
+.sub { color: var(--yellow); font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: .04em; font-size: 22px; }
+.about { background: linear-gradient(135deg, rgba(255,61,154,.14), rgba(255,61,154,.04)); border: 1.5px solid rgba(255,140,195,.5);
+  box-shadow: 0 0 28px -10px rgba(255,61,154,.7); }
+.about::before { background: var(--yellow); }
+.points li { border-color: rgba(255,140,195,.5); background: rgba(255,61,154,.04); }
+.points li:hover { border-color: var(--rose); box-shadow: 0 0 0 1px var(--rose), 0 0 22px -4px rgba(255,61,154,.6); }
+.points .n { font-family: 'Anton', sans-serif; font-weight: 400; font-size: 30px; color: var(--yellow); -webkit-text-stroke: 1px var(--rose); }
+.partners::before { color: var(--yellow); }
+.summary { border-color: var(--yellow); background: rgba(255,212,0,.06); }
+.age-note b { color: var(--yellow); border-color: var(--yellow); }
+.video-card .poster img { height: 76%; filter: drop-shadow(0 0 6px #ff3d9a) drop-shadow(0 0 18px rgba(255,61,154,.6)); }
+.video-card .play { background: var(--rose); color: #0d0610; }
+.video-card .cap { border: 1px solid rgba(255,140,195,.4); }
+</style>
+</head>
+<body>
+<div class="page">
+  <main class="main">
+    <div>
+      <svg class="work" viewBox="0 0 140 48" overflow="visible" xmlns="http://www.w3.org/2000/svg"><text x="0" y="40" text-anchor="start" font-family="Anton" font-weight="400" font-size="46" transform="translate(3 3)" fill="#ff3d9a">WORK</text><text x="0" y="40" text-anchor="start" font-family="Anton" font-weight="400" font-size="46" fill="#ffd400">WORK</text></svg><h1>Работа в&nbsp;<em>Санкт-Петербурге</em></h1>
+      <p class="sub">Лучшие условия в&nbsp;городе!</p>
+      <div class="about">
+      <p class="lead">Наш приоритет&nbsp;— ваш комфорт и&nbsp;безопасность.</p>
+      <p class="text">В поиске стабильной работы с&nbsp;очень высоким доходом и&nbsp;ежедневными выплатами? <b>Мы можем это предложить.</b>
+        На рынке более 5&nbsp;лет, имеем большую слаженную команду с&nbsp;многолетним опытом. Работаем честно&nbsp;— без скрытых условий и&nbsp;штрафов.</p>
+      </div>
+      <div class="btns" id="hero-btns"><a class="btn tg" href="https://t.me/USERNAME" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6.1 13 1.2 11.5c-1.1-.3-1.1-1.1.2-1.6L20.6 2.5c.9-.3 1.6.2 1.3 1.8Z"/></svg>Telegram</a><a class="btn wa" href="https://wa.me/70000000000?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B2%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B5" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41Z"/></svg>WhatsApp</a></div>
+      <p class="age-note"><b>18+</b>Только для совершеннолетних</p>
+    </div>
+    <!-- Видео: assets/video.mp4 (вертикальное 9:16) -->
+    <div class="video-card" id="vcard">
+      <video src="assets/video.mp4" playsinline preload="metadata" controls></video>
+      <div class="poster"><img src="assets/mini-work.png" alt=""></div>
+      <button class="play" type="button" aria-label="Смотреть видео"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.4-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z"/></svg></button>
+      <div class="cap"><b>Коротко о работе</b><span id="vlabel">Видео · 1 минута</span></div>
+    </div>
+  </main>
+
+  <section class="key">
+    <h2>Наши условия</h2>
+    <ol class="points"><li><span class="n">1</span><b>Тут будет условие</b><p>Тут будет описание</p></li><li><span class="n">2</span><b>Тут будет условие</b><p>Тут будет описание</p></li><li><span class="n">3</span><b>Тут будет условие</b><p>Тут будет описание</p></li><li><span class="n">4</span><b>Тут будет условие</b><p>Тут будет описание</p></li><li><span class="n">5</span><b>Тут будет условие</b><p>Тут будет описание</p></li><li><span class="n">6</span><b>Тут будет условие</b><p>Тут будет описание</p></li><li><span class="n">7</span><b>Тут будет условие</b><p>Тут будет описание</p></li><li><span class="n">8</span><b>Тут будет условие</b><p>Тут будет описание</p></li></ol>
+    <p class="partners">Тут будет, с кем работаем</p>
+    <p class="summary">Тут будет вывод</p>
+  </section>
+
+  <section class="contacts">
+    <h2>Связаться с&nbsp;нами</h2>
+    <ul>
+      <li><a href="https://t.me/USERNAME" target="_blank" rel="noopener"><i class="tg"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6.1 13 1.2 11.5c-1.1-.3-1.1-1.1.2-1.6L20.6 2.5c.9-.3 1.6.2 1.3 1.8Z"/></svg></i><span>Telegram</span><b>@USERNAME</b></a></li>
+      <li><a href="https://wa.me/70000000000?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B2%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B5" target="_blank" rel="noopener"><i class="wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41Z"/></svg></i><span>WhatsApp</span><b>+7 000 000-00-00</b></a></li>
+    </ul>
+  </section>
+</div>
+<div class="dock" id="dock"><div class="btns"><a class="btn tg" href="https://t.me/USERNAME" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6.1 13 1.2 11.5c-1.1-.3-1.1-1.1.2-1.6L20.6 2.5c.9-.3 1.6.2 1.3 1.8Z"/></svg>Telegram</a><a class="btn wa" href="https://wa.me/70000000000?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B2%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B5" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41Z"/></svg>WhatsApp</a></div></div>
+<!-- Переключатель вариантов: убрать после выбора -->
+<nav class="switch"><a href="pudra.html" class="">D · Пудра</a><a href="roza.html" class="">E · Роза</a><a href="work.html" class="on">F · WORK</a><a href="tarantino.html" class="">G · Тарантино</a><a href="pulp.html" class="">H · Pulp</a></nav>
+<script>
+const card = document.getElementById('vcard'), video = card.querySelector('video');
+const soon = () => { card.classList.add('soon'); document.getElementById('vlabel').textContent = 'Видео скоро появится'; };
+video.addEventListener('error', soon); if (video.error) soon();
+card.querySelector('.play').addEventListener('click', () => { card.classList.add('playing'); video.play(); });
+video.addEventListener('play', () => card.classList.add('playing'));
+const dock = document.getElementById('dock'), seen = new Set();
+new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? seen.add(e.target) : seen.delete(e.target)); dock.classList.toggle('show', !seen.size); })
+  .observe(document.getElementById('hero-btns'));
+</script>
+</body>
+</html>
